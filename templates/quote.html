@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quote
+{% endblock %}
+
+{% block main %}
+
+    <h2 class="header-template">Search for a Stock Quote</h2>
+    <form class="form-template" action="/quote" method="post">
+        <div class="form-div">
+          <input autocomplete="off" autofocus class="form-control input-template" name="symbol" placeholder="Symbol" type="text">
+          <button class="btn btn-primary" type="submit">Search</button>
+        </div>
+    </form>
+
+{% endblock %}

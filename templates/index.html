@@ -1,0 +1,51 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Index
+{% endblock %}
+
+
+{% block main %}
+
+    <h2 class="portfolio-h2">Your Portfolio</h2>
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th class="text-start">Symbol</th>
+                <th class="text-end">Shares</th>
+                <th class="text-end">Price</th>
+                <th class="text-end">TOTAL</th>
+            </tr>
+        </thead>
+        <tbody class="portfolio-tbody">
+            {% if portfolio %}
+
+            {% for stock in portfolio %}
+            <tr>
+                <td class="text-start">{{ stock["symbol"] }}</td>
+                <td class="text-end">{{ stock["total_shares"] }}</td>
+                <td class="text-end">{{ stock["price"] | usd }}</td>
+                <td class="text-end">{{ (stock["total_shares"] * stock["price"]) | usd }}</td>
+            </tr>
+            {% endfor %}
+
+            {% endif %}
+        </tbody>
+        <tfoot>
+            <tr>
+                <td class="border-0 fw-bold text-end" colspan="3">Total shares $</td>
+                <td class="border-0 text-end">{{ total_shares_balance | usd }}</td>
+            </tr>
+            <tr>
+                <td class="border-0 fw-bold text-end" colspan="3">Cash</td>
+                <td class="border-0 text-end">{{ cash | usd }}</td>
+            </tr>
+            <tr>
+                <td class="border-0 fw-bold text-end" colspan="3">TOTAL</td>
+                <td class="border-0 w-bold text-end">{{ user_balance | usd }}</td>
+            </tr>
+        </tfoot>
+    </table>
+
+{% endblock %}

@@ -1,0 +1,99 @@
+/* Size for brand */
+nav .navbar-brand {
+    font-size: xx-large;
+}
+
+/* Colors for brand */
+nav .navbar-brand .blue {
+    color: #537fbe;
+}
+
+nav .navbar-brand .red {
+    color: #ea433b;
+}
+
+nav .navbar-brand .yellow {
+    color: #f5b82e;
+}
+
+nav .navbar-brand .green {
+    color: #2e944b;
+}
+
+ul.navbar-nav.ms-auto.mt-2 {
+    align-items: baseline;
+}
+
+.username-text {
+    font-size: 1.2rem;
+}
+
+.header-template {
+    margin-bottom: 3rem;
+}
+
+.form-template {
+    margin-bottom: 20rem;
+}
+
+.form-div {
+    display: flex;
+    justify-content: center;
+}
+
+.input-template {
+    width: 40%;
+    max-width: 280px;
+    margin-right: 1rem;
+}
+
+.quoted-results {
+    margin: 3rem 0 12rem;
+}
+
+.symbol-div {
+    font-size: 2rem;
+    margin: 0.5rem 0;
+}
+
+.price-div {
+    font-size: 1.4rem;
+}
+
+.symbol-div span,
+.price-div span {
+    font-weight: bold;
+}
+
+.buy-sell-inputs {
+    flex-direction: column;
+    align-items: center;
+}
+
+.buy-sell-inputs .input-template {
+    margin-bottom: 0.5rem;
+}
+
+.portfolio-h2 {
+    margin-bottom: 4rem;
+}
+
+.portfolio-tbody tr:last-of-type {
+    margin-bottom: 2rem;
+}
+
+.sell-form {
+    margin-bottom: 15rem;
+}
+
+.sell-select {
+    margin-bottom: 1.4rem;
+}
+
+.reset-password {
+    margin: 2rem 0 20rem;
+}
+
+.password-form {
+    margin-top: 3rem;
+}
